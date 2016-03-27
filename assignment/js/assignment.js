@@ -108,7 +108,7 @@ map.on('draw:created', function (e) {
     var lastName = i.properties.Last_Name;
     var location = i.properties.Location;
     var category = i.properties.Category;
-    var html = '<div  class = "shape" id= "shape-'+i.id+'" data-id = "'+i.id+'" onmouseover = "mouseover()"  onmouseleave = "mouseleave()"> <h1> '+firstName+' '+lastName+'</h1> <p>'+location+'</p> <p> '+category+'</p> <br> </div>';
+    var html = '<div  class = "shape" id= "shape-'+i.id+'" data-id = "'+i.id+'" onmouseover = "mouseover()"  onmouseleave = "mouseleave()"> <h1> '+firstName+' '+lastName+'</h1> <p>'+location+'</p> <p> '+category+'</p> <br> <HR> <br> </div>';
     $('#shapes').append(html);
   });
 });
