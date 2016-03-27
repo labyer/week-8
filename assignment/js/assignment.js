@@ -38,8 +38,8 @@ var drawControl = new L.Control.Draw({
   draw: {
     polyline: false,
     polygon: { shapeOptions: {
-      color: '#142f54',
-      fillOpacity: 0,
+      color: '#09101a',
+      fillOpacity: 0.2,
       opacity: 0.9
       }
     },
@@ -108,7 +108,8 @@ map.on('draw:created', function (e) {
     var lastName = i.properties.Last_Name;
     var location = i.properties.Location;
     var category = i.properties.Category;
-    var html = '<div  class = "shape" id= "shape-'+i.id+'" data-id = "'+i.id+'" onmouseover = "mouseover()"  onmouseleave = "mouseleave()"> <h1> '+firstName+' '+lastName+'</h1> <p>'+location+'</p> <p> '+category+'</p> <br> <HR> <br> </div>';
+    var html = '<div  class = "shape" id= "shape-'+i.id+'" data-id = "'+i.id+'" onmouseover = "mouseover()"  onmouseleave = "mouseleave()"> <br> <HR> <br> <h2> '+firstName+' '+lastName+'</h2> <p>'+location+'</p> <p> '+category+'</p> </div>';
+    $('#header').text('CAMBRIDGE PUBLIC ART EXHIBITS WITHIN SPECIFIED AREA');
     $('#shapes').append(html);
   });
 });
