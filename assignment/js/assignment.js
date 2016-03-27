@@ -109,6 +109,7 @@ map.on('draw:created', function (e) {
     var location = i.properties.Location;
     var category = i.properties.Category;
     var html = '<div  class = "shape" id= "shape-'+i.id+'" data-id = "'+i.id+'" onmouseover = "mouseover()"  onmouseleave = "mouseleave()"> <br> <HR> <br> <h2> '+firstName+' '+lastName+'</h2> <p>'+location+'</p> <p> '+category+'</p> </div>';
+    $('#start').text('');
     $('#header').text('CAMBRIDGE PUBLIC ART EXHIBITS WITHIN SPECIFIED AREA');
     $('#shapes').append(html);
   });
